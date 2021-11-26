@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <form action="" method="post">
+        
+    </form>
+    <br>
+    <table>
+        <thead>
+            <th>Title</th>
+
+            <th>Firstname</th>
+
+            <th>Lastname</th>
+            
+            <th>Position</th>
+
+            <th>Company</th>
+
+            <tbody>
+                <% displayArray.forEach((data)=>{ %>
+                <tr>
+                    <td>
+                        <%= data.Title %>
+                    </td>
+                    <td>
+                        <%= data.Firstname %>
+                    </td>
+                    <td>
+                        <%=  data.Lastname %>
+                    </td>
+                    <td>
+                        <%=  data.Position %>
+                    </td>
+                    <td>
+                        <%=  data.Company %>
+                    </td>
+                </tr>
+                <%  }) %>
+            </tbody>
+        </thead>
+    </table>
+</body>
+</html>
